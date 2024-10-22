@@ -1,0 +1,96 @@
+.privacy-section {
+  padding: 5rem 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #457b9d; /* Add a bottom border */
+  padding-bottom: 1rem; /* Add padding below */
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #457b9d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.info-list {
+  list-style-type: disc;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  text-align: left; /* Align text to the left for lists */
+}
+
+.info-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #2b2d42;
+}
+
+@media (max-width: 768px) {
+  .privacy-section {
+    padding: 4rem 5%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .info-list li {
+    font-size: 1rem;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #333;
+}
+
+.logo {
+  cursor: pointer; /* Make the logo clickable */
+}
+
+.logo img {
+  width: 150px; /* Adjust size as needed */
+}

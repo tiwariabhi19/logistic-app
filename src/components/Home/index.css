@@ -1,0 +1,371 @@
+.services-section,
+.why-choose-us,
+.testimonials-section {
+  background-color: #ffffff !important;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://vmn-logistiek.imgix.net/uploads/2022/10/dhl-trendradar-hoofdfoto-kopie.jpg?auto=compress%2Cformat&q=50&w=1600&h=900&fit=crop");
+  background-size: 100% 100vh;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 0.5rem;
+  max-width: 700px;
+  max-height: 430px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #f5a623;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0.3rem 0;
+}
+
+.hero-content p {
+  flex: 1; /* Reduce the width of the content area */
+  text-align: justify;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 0.3rem; /* Add padding for better content spacing */
+  margin: 1rem; /* Space between content and image */
+  max-height: 400px; /* Match the height to the image */
+  overflow: auto;
+  color: #fff;
+  font-size: 1.1rem;
+  padding-bottom: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn,
+.trans-btn {
+  height: 50px;
+  width: 150px;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #f5a623;
+}
+
+.trans-btn {
+  background-color: transparent;
+  border: 2px solid #f5a623;
+  color: #f5a623;
+}
+
+.btn:hover {
+  background-color: #d98e1d;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.trans-btn:hover {
+  background-color: #f5a623;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-content {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn,
+  .trans-btn {
+    height: 40px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    margin: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .hero-content h4 {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .btn,
+  .trans-btn {
+    height: 35px;
+    width: 100px;
+    font-size: 0.9rem;
+  }
+}
+.services-section {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #ff4500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.service {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  /* width: 100vw; */
+}
+
+.service-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover .service-image {
+  filter: brightness(1.1);
+}
+
+.service h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+.service h4 {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+
+.service p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.why-choose-us {
+  padding: 4rem 5%;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.choose-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.choose-item {
+  flex: 1;
+  text-align: center;
+}
+
+.choose-item img {
+  width: 500px;
+  height: auto;
+}
+
+.choose-item h3 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.choose-item p {
+  flex: 1; /* Reduce the width of the content area */
+  text-align: justify;
+  line-height: 1.5;
+  padding: 1rem; /* Add padding for better content spacing */
+  overflow: auto;
+  font-size: 1.2rem;
+}
+
+.testimonials-section {
+  padding: 4rem 12%;
+  background-color: #fff;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonial h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+.cta-section {
+  padding: 4rem 5%;
+  background: linear-gradient(135deg, #f0ede8 0%, #ebe4e0 100%);
+  color: white;
+  /* background-color: #fff; */
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+}
+
+.cta-section p {
+  font-size: 1.3rem;
+  margin: 1.5rem 2rem;
+  color: rgb(48, 46, 46);
+}
+
+.cta-section .btn {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cta-section .btn:hover {
+  background-color: #fff;
+  color: #ffa500;
+}
+
+@media (max-width: 480px) {
+  .cta-section .btn {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .choose-item img {
+    width: 300px;
+    height: auto;
+  }
+  /* .testimonials-grid .testimonial {
+    width: 400px;
+  } */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #333;
+}
+
+.logo {
+  cursor: pointer; /* Make the logo clickable */
+}
+
+.logo img {
+  width: 150px; /* Adjust size as needed */
+}

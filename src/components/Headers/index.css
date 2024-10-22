@@ -1,0 +1,113 @@
+.header-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px; /* Keep the navbar height fixed */
+}
+
+.logo-container {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  height: 90px; /* Increased logo size */
+  width: auto;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  top: 4px; /* Move the logo upwards slightly to fit in the navbar */
+  transform: translateY(-12%); /* Adjust the vertical alignment */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.nav-menu li {
+  padding: 0 1.5rem;
+  cursor: pointer;
+  color: #457b9d;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-menu li:hover {
+  color: #ffa500;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.mobile-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 80px; /* Adjusted to match the navbar height */
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #457b9d;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  .mobile-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #457b9d;
+    z-index: 1001;
+  }
+
+  .logo {
+    height: 65px; /* Adjust the logo size for mobile */
+    width: auto;
+    cursor: pointer;
+    margin-right: 20px;
+    top: 0;
+    transform: none; /* No transform for mobile view */
+  }
+}

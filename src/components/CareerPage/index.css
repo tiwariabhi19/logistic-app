@@ -1,0 +1,155 @@
+.career-page {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+.career-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.career-header li {
+  list-style: none;
+}
+
+.career-header h1 {
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 1rem;
+}
+
+.career-header p {
+  font-size: 1.1rem;
+  color: #8d99ae;
+}
+
+.job-openings {
+  margin-bottom: 3rem;
+}
+
+.job-openings h2 {
+  font-size: 2rem;
+  color: #457b9d;
+  margin-bottom: 1.5rem;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.job-item {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.job-item h3 {
+  font-size: 1.5rem;
+  color: #2b2d42;
+  margin-bottom: 0.5rem;
+}
+
+.job-item p {
+  font-size: 1rem;
+  color: #8d99ae;
+  margin-bottom: 1rem;
+}
+
+.apply-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #457b9d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #ffa500;
+}
+
+.application-form h2 {
+  font-size: 2rem;
+  color: #457b9d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.application-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #2b2d42;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #457b9d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+
+  .career-header h1 {
+    font-size: 2rem;
+  }
+
+  .career-header p {
+    font-size: 1rem;
+  }
+
+  .application-form h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styling for error messages */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Optional: Disable button during loading */
+.submit-btn.loading {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

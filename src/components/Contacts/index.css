@@ -1,0 +1,200 @@
+.contact-section {
+  padding: 6rem 5%;
+  background-color: #f9f9f9;
+  background-image: url("https://nostrum.ma/wp-content/uploads/2023/05/top-view-blue-monday-concept-composition-with-telephone-scaled.jpg"); /* Update path if necessary */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  color: #052b42;
+}
+
+.contact-details strong {
+  color: #000;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.form-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #457b9d;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  min-height: 160px;
+}
+
+textarea:focus {
+  border-color: #457b9d;
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #457b9d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #356a8d;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .contact-info {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-section {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Add spinner effect */
+.btn-submit.loading {
+  background-color: #999;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.btn-submit.loading:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  transform: translateY(-50%);
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  display: block;
+}
