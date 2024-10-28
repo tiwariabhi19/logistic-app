@@ -79,18 +79,3 @@ a:hover {
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-  background-color: #333;
-}
-
-.logo {
-  cursor: pointer; /* Make the logo clickable */
-}
-
-.logo img {
-  width: 150px; /* Adjust size as needed */
-}
